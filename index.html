@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Fight Club</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    
 </head>
 <body>
-    <div class="name-form">
+    <div id="screen1" class="visible">
         <h2 class="name-title">Create your character</h2>
         <p class="name-text">Character Name</p>
         <input type="text" id="userNameInput" placeholder="Enter your name">
-        <button onclick="saveName()">Create Character</button>
+        <button onclick="saveName()" id="toggleButton" class="name-button">Create Character</button>
     </div>
-    
+
+    <div id="screen2" class="hidden">
+        <div class="main-top">
+            <p>Main</p>
+            <div class="main-icons">
+                <img src="./icons8-главная.gif" alt="home page">
+                <img src="./icons8-человек.gif" alt="person">
+                <img src="./icons8-настройки.gif" alt="settings">
+            </div>
+        </div>
+        <button class="name-button fight">Fight</button>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>

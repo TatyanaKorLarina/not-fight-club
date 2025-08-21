@@ -1,21 +1,38 @@
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
 .name-title {
     text-align: center;
 }
 
-
-.name-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-top: 300px;
-}
-
 .name-button {
     transition: 0,5s;
+    
+
 }
 
 .name-button:active {
     transform: translateY(0,5rem);
 }
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    width: 1024px;
+}
+
+.fight {
+    margin-top: 300px;
+}
+
+
+
