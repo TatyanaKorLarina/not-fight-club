@@ -7,8 +7,6 @@ function saveName() {
 
 let toggleButton = document.getElementById('toggleButton');
 
-
-// Добавляем обработчик события клика на кнопку
 toggleButton.addEventListener('click', () => {
     const screen1 = document.getElementById('screen1');
     const screen2 = document.getElementById('screen2');
@@ -16,7 +14,6 @@ toggleButton.addEventListener('click', () => {
     screen1.classList.add('hidden');
     screen2.classList.remove('hidden');
     screen2.classList.add('visible');
-
 });
 
 
